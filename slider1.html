@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+.owl-carousel {
+    width: 100%;
+    padding: 30px 50px;
+}
+
+.owl-carousel .item {
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.owl-carousel .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Next & Previous Buttons */
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 40%;
+    color: black;
+    font-size: 60px;
+    background: transparent;
+    border: none;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: 10px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    left: 10px;
+}
+
+/* Button hover */
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+    background: transparent;
+    color: #555;
+}
+
+/* Dots */
+.owl-carousel .owl-dots {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.owl-carousel .owl-dot span {
+    width: 10px;
+    height: 10px;
+}
+        .owl-carousel .owl-nav button.owl-next {
+            position: absolute;
+            top: 40%;
+            right: 1%;
+            color: black;
+            font-size: 60px;
+        }
+         .owl-carousel .owl-nav button.owl-prev{
+            position: absolute;
+            top: 40%;
+            left: 1%;
+            font-size: 60px;
+            color: black;
+        }
+
+
+        </style>
+</head>
+<body>
+    <div class="owl-carousel owl-theme">
+   <div class="item">
+        <img src="ss1.jpg" alt="">
+    </div>
+    <div class="item">
+        <img src="ss2.jpg" alt="">
+    </div>
+    <div class="item">
+        <img src="t1.avif" alt="">
+    </div>
+      <div class="item">
+        <img src="t2.webp" alt="">
+      </div>
+      <div class="item">
+        <img src="t3.jpeg" alt="">
+      </div>
+        <div class="item">
+            <img src="t4.avif" alt="">
+        </div>
+           <div class="item">
+            <img src="w1.jpg" alt="">
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="owl.carousel.minn.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+</script>
+</body>
+</html>
